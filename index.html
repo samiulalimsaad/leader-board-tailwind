@@ -9,9 +9,9 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-indigo-50">
-        <header class="py-8 bg-indigo-700 text-gray-200 shadow-lg">
+        <header class="py-4 bg-indigo-700 text-gray-200 shadow-lg">
             <nav
-                class="container mx-auto w-3/5 flex flex-wrap items-center justify-between"
+                class="container mx-auto w-3/5 flex flex-col md:flex-row flex-wrap items-center justify-between gap-4"
             >
                 <div>
                     <a class="flex gap-4" href="#">
@@ -19,7 +19,7 @@
                         <p class="text-3xl font-semibold">Idea</p>
                     </a>
                 </div>
-                <div class="flex items-center gap-4">
+                <div class="flex flex-col md:flex-row items-center gap-4">
                     <a class="hover:text-gray-400" href="#">Home</a>
                     <a class="hover:text-gray-400" href="#">About</a>
                     <a class="hover:text-gray-400" href="#">Work</a>
@@ -35,8 +35,164 @@
         </header>
         <!-- Top Players -->
         <section>
-            <div class="bg-white h-96 w-96">
-                <h2>Top Players</h2>
+            <div class="container mx-auto mt-8 p-8 md:w-3/5 bg-white">
+                <div>
+                    <h2 class="text-indigo-500 text-2xl font font-medium">
+                        Top Players
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-3 items-center gap-8 mt-8"
+                    >
+                        <div class="flex items-center">
+                            <img
+                                class="h-16 mr-4"
+                                src="images/players/player-1.png"
+                                alt=""
+                            />
+                            <h3 class="text-gray-900 font-medium text-xl">
+                                John Smith
+                            </h3>
+                        </div>
+                        <div class="flex items-center">
+                            <img
+                                class="h-16 mr-4"
+                                src="images/players/player-2.png"
+                                alt=""
+                            />
+                            <h3 class="text-gray-900 font-medium text-xl">
+                                Pro Rasel
+                            </h3>
+                        </div>
+                        <div class="flex items-center">
+                            <img
+                                class="h-16 mr-4"
+                                src="images/players/player-3.png"
+                                alt=""
+                            />
+                            <h3 class="text-gray-900 font-medium text-xl">
+                                Abu Sufian
+                            </h3>
+                        </div>
+                        <div class="flex items-center">
+                            <img
+                                class="h-16 mr-4"
+                                src="images/players/player-4.png"
+                                alt=""
+                            />
+                            <h3 class="text-gray-900 font-medium text-xl">
+                                Shajedul Karim
+                            </h3>
+                        </div>
+                        <div class="flex items-center">
+                            <img
+                                class="h-16 mr-4"
+                                src="images/players/player-5.png"
+                                alt=""
+                            />
+                            <h3 class="text-gray-900 font-medium text-xl">
+                                Maruf Ahmed
+                            </h3>
+                        </div>
+                        <div class="flex items-center">
+                            <img
+                                class="h-16 mr-4"
+                                src="images/players/player-6.png"
+                                alt=""
+                            />
+                            <h3 class="text-gray-900 font-medium text-xl">
+                                Mujahid
+                            </h3>
+                        </div>
+                    </div>
+                    <hr class="border-t border-slate-300 rounded-3xl my-8" />
+                    <div>
+                        <h2 class="text-indigo-500 text-2xl font font-medium">
+                            Top Blogs
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <img
+                                    src="images/blogs/blog-1.png"
+                                    alt=""
+                                    class="h-32 mr-4"
+                                />
+                                <div>
+                                    <h3
+                                        class="text-gray-900 text-xl font-medium leading-8"
+                                    >
+                                        13 of My Favorite UI/UX Goodies
+                                    </h3>
+                                    <p class="text-gray-500 text-lg mt-4">
+                                        By
+                                        <span class="text-indigo-600"
+                                            >Danny Sapio</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <img
+                                    src="images/blogs/blog-2.png"
+                                    alt=""
+                                    class="h-32 mr-4"
+                                />
+                                <div>
+                                    <h3
+                                        class="text-gray-900 text-xl font-medium leading-8"
+                                    >
+                                        cheat sheet: list vs grids
+                                    </h3>
+                                    <p class="text-gray-500 text-lg mt-4">
+                                        By
+                                        <span class="text-indigo-600"
+                                            >Tess Gadd</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <img
+                                    src="images/blogs/blog-3.png"
+                                    alt=""
+                                    class="h-32 mr-4"
+                                />
+                                <div>
+                                    <h3
+                                        class="text-gray-900 text-xl font-medium leading-8"
+                                    >
+                                        7 typography tips for interface design
+                                    </h3>
+                                    <p class="text-lg mt-4text-gray-500">
+                                        By
+                                        <span class="text-indigo-600">
+                                            By Jeremiah Lam
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <img
+                                    src="images/blogs/blog-4.png"
+                                    alt=""
+                                    class="h-32 mr-4"
+                                />
+                                <div>
+                                    <h3
+                                        class="text-gray-900 text-xl font-medium leading-8"
+                                    >
+                                        Your logo is copied
+                                    </h3>
+                                    <p class="text-gray-500 text-lg mt-4">
+                                        By
+                                        <span class="text-indigo-600"
+                                            >Ferdinand Vogler</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
